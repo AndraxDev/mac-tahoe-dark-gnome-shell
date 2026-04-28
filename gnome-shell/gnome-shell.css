@@ -4116,7 +4116,8 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-toggle {
-  background-color: rgba(9, 9, 9, 0.9) !important; /* PATCHED */
+  /*background-color: rgba(9, 9, 9, 0.9) !important; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important; /* PATCHED */
   border-radius: 9999px;
   color: #dedede;
   padding: 12px !important;
@@ -4126,7 +4127,8 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-toggle:hover {
-  background-color: rgba(18, 18, 18, 0.9) !important; /* PATCHED */
+  /*background-color: rgba(18, 18, 18, 0.9) !important; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 35%), 0.7) !important;
   transition: all 0.2s ease-in-out;
   color: #dedede;
 }
@@ -4139,12 +4141,14 @@ StWidget.focused .app-grid-running-dot {
 .quick-toggle:checked {
   background-color: st-lighten(-st-accent-color, 25%) !important; /* PATCHED */
   /*background-color: green !important;*/
-  color: rgba(24, 24, 24, 0.9);
+  /*color: rgba(24, 24, 24, 0.9);*/
+  color: st-mix(#121212, st-darken(-st-accent-color, 25%), 0.5);
   transition: all 0.2s ease-in-out;
 }
 
 .quick-toggle:checked:hover {
-  color: rgba(24, 24, 24, 0.9); /* PATCHED */
+  /*color: rgba(24, 24, 24, 0.9); !* PATCHED *!*/
+  color: st-mix(#121212, st-darken(-st-accent-color, 25%), 0.5);
   background-color: st-lighten(-st-accent-color, 15%) !important;
   /*background-color: st-mix(#dadada, -st-accent-color, 6%) !important;*/
   transition: all 0.2s ease-in-out;
@@ -4184,21 +4188,25 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-toggle-has-menu {
-  background-color: rgba(9, 9, 9, 0.9) !important; /* PATCHED */
+  /*background-color: rgba(9, 9, 9, 0.9) !important; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important;
   border-radius: 9999px;
   padding: 4px 0 !important;
 }
 
 .quick-toggle-has-menu:hover {
-  background-color: rgba(18, 18, 18, 0.9) !important; /* PATCHED */
+  /*background-color: rgba(18, 18, 18, 0.9) !important; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 35%), 0.7) !important;
 }
 
 .quick-toggle-has-menu:active {
-  background-color: #404040 !important;
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 25%), 0.7) !important;
+  /*background-color: #404040 !important;*/
 }
 
 .quick-toggle-has-menu:checked {
-  background-color: rgba(9, 9, 9, 0.9) !important; /* PATCHED */
+  /*background-color: rgba(9, 9, 9, 0.9) !important; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important;
 }
 
 .quick-toggle-has-menu .quick-toggle {
@@ -4217,12 +4225,14 @@ StWidget.focused .app-grid-running-dot {
   border-radius: 9999px;
   min-height: 40px !important;
   min-width: 40px !important;
-  background-color: #212121;
+  /*background-color: #212121; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 35%), 0.7) !important;
   transition: none;
 }
 
 .quick-toggle-has-menu .quick-toggle:hover .quick-toggle-icon {
-  background-color: #323232;
+  /*background-color: #323232; !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 25%), 0.7) !important;
 }
 
 .quick-toggle-has-menu .quick-toggle:active .quick-toggle-icon {
@@ -4297,7 +4307,8 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-slider {
-  background-color: rgba(9, 9, 9, 0.9); /* PATCHED */
+  /*background-color: rgba(9, 9, 9, 0.9); !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important;
   border-radius: 24px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.18) !important;
   min-height: 40px;
@@ -4343,7 +4354,8 @@ StWidget.focused .app-grid-running-dot {
 
 .quick-toggle-menu {
   color: #dedede !important;
-  background-color: rgba(9, 9, 9, 0.9) !important;
+  /*background-color: rgba(9, 9, 9, 0.9) !important;*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important;
   border-radius: 20px;
   padding: 12px;
   /*margin: 8px 28px 0;*/ /* PATCHED */
@@ -4398,7 +4410,8 @@ StWidget.focused .app-grid-running-dot {
 .quick-settings-system-item .icon-button, .quick-settings-system-item .message-notification-group .message-collapse-button, .message-notification-group .quick-settings-system-item .message-collapse-button, .quick-settings-system-item .message .message-header .message-expand-button, .message .message-header .quick-settings-system-item .message-expand-button,
 .quick-settings-system-item .message .message-header .message-close-button,
 .message .message-header .quick-settings-system-item .message-close-button {
-  background-color: rgba(9, 9, 9, 0.9); /* PATCHED */
+  /*background-color: rgba(9, 9, 9, 0.9); !* PATCHED *!*/
+  background-color: st-mix(#121212, st-darken(-st-accent-color, 45%), 0.7) !important;
   color: #dedede;
   border-radius: 9999px;
   min-height: 28px !important;
